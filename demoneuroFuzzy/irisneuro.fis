@@ -1,0 +1,79 @@
+[System]
+Name='irisneuro'
+Type='sugeno'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=16
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='input1'
+Range=[4.3 7.9]
+NumMFs=2
+MF1='in1mf1':'trapmf',[1.92 3.28 5.34025165825723 6.60979726241502]
+MF2='in1mf2':'trapmf',[5.3177695692213 6.69892030491422 8.72 10.08]
+
+[Input2]
+Name='input2'
+Range=[2 4.4]
+NumMFs=2
+MF1='in2mf1':'trapmf',[0.32 1.28 2.73670875906717 3.60217639404772]
+MF2='in2mf2':'trapmf',[2.88021394780659 3.69622472656895 5.12 6.08]
+
+[Input3]
+Name='input3'
+Range=[1 6.9]
+NumMFs=2
+MF1='in3mf1':'trapmf',[-3.13 -0.77 2.79955692258596 5.28497961155039]
+MF2='in3mf2':'trapmf',[2.61177344581267 5.15953105437324 8.67 11.03]
+
+[Input4]
+Name='input4'
+Range=[0.1 2.5]
+NumMFs=2
+MF1='in4mf1':'trapmf',[-1.58 -0.62 0.962152862656221 1.79908830226156]
+MF2='in4mf2':'trapmf',[0.492886448730449 1.89304516122162 3.22 4.18]
+
+[Output1]
+Name='output'
+Range=[1 3]
+NumMFs=16
+MF1='out1mf1':'constant',[1.0381592949176]
+MF2='out1mf2':'constant',[2.5159051099743]
+MF3='out1mf3':'constant',[2.07285808538772]
+MF4='out1mf4':'constant',[3.2502608748564]
+MF5='out1mf5':'constant',[0.989346098853673]
+MF6='out1mf6':'constant',[-14.0842645606391]
+MF7='out1mf7':'constant',[2.69002739509447]
+MF8='out1mf8':'constant',[2.71469279104831]
+MF9='out1mf9':'constant',[3.80079202486301]
+MF10='out1mf10':'constant',[0.71566796629966]
+MF11='out1mf11':'constant',[0.365859201073557]
+MF12='out1mf12':'constant',[2.98686220864652]
+MF13='out1mf13':'constant',[1.0382710173282]
+MF14='out1mf14':'constant',[4.67302847114997]
+MF15='out1mf15':'constant',[-0.344341206968474]
+MF16='out1mf16':'constant',[2.99861507988454]
+
+[Rules]
+1 1 1 1, 1 (1) : 1
+1 1 1 2, 2 (1) : 1
+1 1 2 1, 3 (1) : 1
+1 1 2 2, 4 (1) : 1
+1 2 1 1, 5 (1) : 1
+1 2 1 2, 6 (1) : 1
+1 2 2 1, 7 (1) : 1
+1 2 2 2, 8 (1) : 1
+2 1 1 1, 9 (1) : 1
+2 1 1 2, 10 (1) : 1
+2 1 2 1, 11 (1) : 1
+2 1 2 2, 12 (1) : 1
+2 2 1 1, 13 (1) : 1
+2 2 1 2, 14 (1) : 1
+2 2 2 1, 15 (1) : 1
+2 2 2 2, 16 (1) : 1

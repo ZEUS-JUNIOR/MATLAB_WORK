@@ -1,0 +1,10 @@
+[filename, pathname] = uigetfile('*.*', 'Pick a MATLAB code file');
+filename = strcat(pathname,filename);
+im =imread(filename);
+im = imresize(im,[128 128]);
+label = char(classify(net,im));
+figure;
+imshow(im),title(label);
+disp('Recognized class');
+disp(label);
+clc;
